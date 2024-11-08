@@ -84,7 +84,6 @@ function Index({ score }) {
             {score > 18 && score <= 27 && "You are at a high risk of burnout. take some time to recharge."}
             {score > 27 && "You are at a severe risk of burnout. please consider seeking help."}
           </h1>
-          <p className=" text-black text-lg font-normal xl:text-left text-center">Your Score is : {score}</p>
         </div>
         <img
           src={

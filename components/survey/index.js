@@ -54,7 +54,7 @@ const SurveyUI = () => {
 
   return (
     <>
-      <div className="h-screen overflow-hidden relative flex flex-col items-center justify-between py-[28px] xl:px-0 px-8">
+      <div className="lg:h-screen overflow-hidden relative flex flex-col items-center justify-between py-[28px] xl:px-0 px-8">
         <img src="../survey-bg.png" className="absolute xl:left-0 -left-12 xl:bottom-0 -bottom-48" />
         <div className="mx-auto container flex items-center justify-between">
         <svg width="52" height="33" viewBox="0 0 52 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ const SurveyUI = () => {
           </button>
         </div>
 
-        <div className="relative z-30 flex flex-col items-center -mt-24 ">
+        <div className="relative z-30 flex flex-col items-center lg:-mt-24 mt-20 lg:mb-0 mb-20">
           <h3 className="text-[#6666b3] text-2xl font-bold xl:w-[700px] w-full text-center">{questions[currentQuestion]}</h3>
 
           <div className="mt-4 xl:w-auto w-full">
