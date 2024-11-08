@@ -105,11 +105,11 @@ function Index({ score }) {
         </h2>
         <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-6 gap-8 xl:px-0 px-8">
           {blogs.map((blog) => (
-            <div key={blog.id} className="cursor-pointer">
+            <a key={blog.id} className="cursor-pointer" href={`/blogs/${blog.id}`}>
               <img src={blog.image} alt={blog.title} className="w-full h-48 md:h-64 object-cover rounded-md" />
               <h3 className="text-lg mt-4 font-semibold  mb-2">{blog.title}</h3>
               <p className="text-gray-700"> {blog.content.split(" ").slice(0, 15).join(" ")}...</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

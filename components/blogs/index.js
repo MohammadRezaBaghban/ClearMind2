@@ -31,7 +31,7 @@ export default function BlogsPage() {
           {blogs.map((blog, index) => {
             return (
               <>
-                <div key={blog.id} className="cursor-pointer">
+                <a key={blog.id} className="cursor-pointer" href={`/blogs/${blog.id}`}>
                   <img
                     src={blog.image}
                     alt={blog.title}
@@ -40,7 +40,7 @@ export default function BlogsPage() {
 
                   <h3 className="text-lg mt-4 font-semibold text-gray-800 mb-2">{blog.title}</h3>
                   <p className="text-gray-700"> {blog.content.split(' ').slice(0, 15).join(' ')}...</p>
-                </div>
+                </a>
               </>
             );
           })}
